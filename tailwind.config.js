@@ -1,0 +1,97 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#f5f1fc',
+          100: '#ead5f8',
+          200: '#d7b5f1',
+          300: '#bc8de7',
+          400: '#a370db',
+          500: '#845ec2',
+          600: '#6b42a1',
+          700: '#553380',
+          800: '#3a2359',
+          900: '#211436',
+        },
+        secondary: {
+          50: '#e7f7ff',
+          100: '#c4edff',
+          200: '#90deff',
+          300: '#5ecefd',
+          400: '#38befc',
+          500: '#009ffd',
+          600: '#0081d4',
+          700: '#0064a6',
+          800: '#00467a',
+          900: '#00294c',
+        },
+        accent: {
+          50: '#fff2f5',
+          100: '#ffe0e6',
+          200: '#ffc7d2',
+          300: '#ffa3b5',
+          400: '#ff8a9f',
+          500: '#ff6f91',
+          600: '#d44f72',
+          700: '#a93656',
+          800: '#7f223c',
+          900: '#551124',
+        },
+        success: {
+          50: '#e9fff6',
+          100: '#cfffea',
+          200: '#90ffd3',
+          300: '#56f7bb',
+          400: '#2ae9a4',
+          500: '#00c07f',
+          600: '#00a16a',
+          700: '#008054',
+          800: '#005f3e',
+          900: '#004030',
+        },
+        warning: {
+          50: '#fff6e7',
+          100: '#ffeac5',
+          200: '#ffd894',
+          300: '#ffc75f',
+          400: '#ffb536',
+          500: '#ffa30d',
+          600: '#d47e00',
+          700: '#a96000',
+          800: '#7f4500',
+          900: '#552d00',
+        },
+        error: {
+          50: '#fff0f2',
+          100: '#ffe0e4',
+          200: '#ffc2ca',
+          300: '#ff9eaa',
+          400: '#ff7d8d',
+          500: '#ff5e78',
+          600: '#d43f5c',
+          700: '#a92645',
+          800: '#7f1530',
+          900: '#550b1e',
+        },
+      },
+      fontFamily: {
+        primary: ['Montserrat', 'sans-serif'],
+        medieval: ['"MedievalSharp"', 'cursive'],
+      },
+      animation: {
+        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'float': 'float 3s ease-in-out infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        }
+      }
+    },
+  },
+  plugins: [],
+};
